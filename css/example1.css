@@ -46,10 +46,10 @@ body {
 
 p {
   width: 13rem;
-  height: 5rem;
+  height: 3rem;
   background-color: rgb(99, 39, 15);
   text-align: center;
-  line-height: 50px;
+  line-height: 3rem;
   border-radius: 5px;
   border: 2px rgba(0, 0, 0, 0.3) solid;
   padding: 10px;
@@ -57,4 +57,8 @@ p {
 
 p > a {
   color: white;
+}
+
+a:hover {
+  color: rgb(226, 223, 223);
 }

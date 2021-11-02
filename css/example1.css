@@ -44,6 +44,13 @@ body {
   background-color: rgb(124, 156, 37);
 }
 
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 p {
   width: 13rem;
   height: 3rem;

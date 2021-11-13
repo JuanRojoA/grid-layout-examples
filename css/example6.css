@@ -1,0 +1,87 @@
+html {
+  background-color: rgba(216, 148, 102, 0.726);
+  margin: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 3px;
+  border: 2px solid black;
+  padding: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 3px;
+}
+
+.container > div:nth-child(1) {
+  background-color: rgb(40, 40, 165);
+}
+.container > div:nth-child(2) {
+  background-color: rgb(214, 87, 48);
+}
+.container > div:nth-child(3) {
+  background-color: rgb(144, 58, 184);
+}
+.container > div:nth-child(4) {
+  background-color: rgb(51, 137, 158);
+}
+.container > div:nth-child(5) {
+  background-color: rgb(184, 47, 54);
+}
+.container > div:nth-child(6) {
+  background-color: rgb(124, 156, 37);
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+p {
+  width: 13rem;
+  height: 3rem;
+  background-color: rgb(99, 39, 15);
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 5px;
+  border: 2px rgba(0, 0, 0, 0.3) solid;
+  padding: 10px;
+  margin: 1rem 0;
+}
+
+p:first-of-type {
+  margin-right: 1.5rem;
+}
+
+p > a {
+  color: white;
+}
+a:hover {
+  color: rgb(226, 223, 223);
+}
+
+@media (max-width: 350px) {
+  .container {
+    grid-template-columns: repeat(3, 80px);
+  }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  p:first-of-type {
+    margin-right: 0;
+  }
+}
